@@ -16,10 +16,12 @@
   <!-- web fonts CDN -->
   <link rel="stylesheet" href="css/default.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/tablet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
   <link rel="shortcut icon" href="imgs/favicon.ico">
   <!-- style Sheet -->
   <meta property="og:title" content="롯데시네마입니다." />
-  <meta property="og:url" content="https://" />
+  <meta property="og:url" content="https://github.com/Maryable/Lotte-Cinema" />
   <meta property="og:image" content="./imgs/ogtag_img.png" />
   <meta property="og:description" content="롯데시네마 홈페이지를 반응형으로 비슷하게 구현해 본 사이드 프로젝트 입니다." />
   <!-- og tags -->
@@ -37,51 +39,386 @@
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script defer src="./js/ie-checker.js"></script>
     <script defer src="./js/modernizr-custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
     <script defer src="js/main.js" ></script>
     <!-- javascript -->
 </head>
 <body>
-  <header id="header">
-    <div class="container">
-      <div class="header-top">
-        <h1 id="logo"><a href="./index.html"><img src="./imgs/logo_wht.png" alt="롯데 시네마 로고"></a></h1>
+<header id="header">
+  <div class="container">
+    <div class="row">
+      <div class="header clearfix">
+        <h1>
+          <a href="#">
+            <em><img src="./imgs/logo_wht.png" alt="롯데시네마"></em>
+          </a>
+        </h1>
+        <nav id="nav">
+          <h2 class="ir_so">롯데시네마 전체메뉴</h2>
+          <a href="#" class="hamburger"><i class="xi-bars"></i></a>
+        </nav>
         <nav class="nav">
-          <ul>
-            <li><a href="#">예매</a></li>
+          <ul class="clearfix">
             <li><a href="#">영화</a></li>
+            <li><a href="#">큐레이션</a></li>
             <li><a href="#">영화관</a></li>
-            <li><a href="#">이벤트</a></li>
+            <li><a href="#">특별관</a></li>
             <li><a href="#">스토어</a></li>
+            <li><a href="#">이벤트</a></li>
+            <li><a href="#">로그인</a></li>
           </ul>
         </nav>
-      </div> <!-- header-top -->
-    </div> <!-- container -->
-  </header>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- //header -->
 
-  <section id="slide_area">
-    <h2 class="ir_so">최신 영화 개봉작 소개 배너영역</h2>
-    <div class="slide-banner">
-      <div class="hamburger"><i class="xi-bars"></i></div>
-      <ul class="banner banner1">
-        <li class="line"><a href="#"><i class="xi-facebook"></i>좋아요</a></li>
-        <li class="line"><a href="#"><i class="xi-youtube-play"></i>구독하기</a></li>
-        <li><a href="#"><i class="xi-instagram"></i>팔로우</a></li>
-      </ul>
-      <ul class="banner banner2">
-        <li class="now"><a href="#">바로예매</a></li>
-        <li class="line"><a href="#">상영시간표</a></li>
-        <li><a href="#">예고편</a></li>
-      </ul>
-      <ul class="banner banner3">
-        <li class="line"><a href="#">멤버십</a></li>
-        <li class="line"><a href="#">고객센터</a></li>
-        <li><a href="#">로그인</a></li>
-      </ul>
-    </div> <!-- slide-banner -->
 
-    <div class="slider">
-      <img src="./imgs/slide0.jpg" alt="movie banner">
-    </div> <!-- slider -->
-  </section> <!-- slider -->
+<section id="banner">
+  <h2 class="ir_so">최신 영화 소식</h2>
+  <div class="banner_menu">
+    <div class="container">
+      <div class="row">
+        <div class="banner_left">
+            <ul>
+                <li class="total"><a href="#"><i class="xi-bars"></i></a></li>
+                <li class="line"><a href="#">상영시간</a></li>
+                <li><a href="#">빠른 예매</a></li>
+            </ul>
+        </div>
+        <div class="banner_right">
+          <ul>
+            <li class="line"><a href="#">고객센터</a></li>
+            <li class="line"><a href="#">멤버쉽</a></li>
+            <li><a href="#">VIP</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slider">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide1">
+          <div class="container">
+            <div class="row">
+              <h2 class="ir_so">라야와 마지막 드래곤</h2>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide slide2">
+          <div class="container">
+            <div class="row">
+              <h2 class="ir_so">라스트 레터</h2>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide slide3">
+          <div class="container">
+            <div class="row">
+              <h2 class="ir_so">어니스트 씨프</h2>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide slide4">
+          <div class="container">
+            <div class="row">
+              <h2 class="ir_so">지친 우리를 치유해 줄 영화 아이</h2>
+            </div>
+          </div>
+      </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+</section>
+<!-- //banner -->
+
+<section id="movie_chart_wrap">
+  <div class="container">
+    <div class="row">
+      <div class="movie">
+        <h2 class="ir_so">최신 영화 순위</h2>
+        <div class="movie_title">
+          <ul>
+            <li><a href="#">박스오피스</a></li>
+            <li><a href="#">최신개봉작</a></li>
+            <li><a href="#">리마스터링</a></li>
+            <li><a href="#">상영예정작</a></li>
+          </ul>
+        </div> <!-- movie title -->
+        <div class="movie_chart">
+          <div class="swiper-container2">
+            <div class="chart_content1 swiper-wrapper">
+              <div class="chart_movie swiper-slide"> <!-- movie1 -->
+                <div class="poster">
+                  <figure>
+                    <img src="./imgs/movie1.jpg" srcset="./imgs/movie1@1.jpg 2x" alt="영화 내일의 기억">
+                  </figure>
+                  <div class="rank"><strong>1</strong></div>
+                </div> <!-- poster -->
+                
+                <div class="info">
+                  <h3><span>15</span><strong>내일의 기억</strong></h3>
+                  <div class="info_btn">
+                    <a href="#">예매하기</a>
+                    <a href="#">상세보기</a>
+                  </div>
+                </div>
+              </div> <!-- movie1 -->
+              <div class="chart_movie swiper-slide"> <!-- movie2 -->
+                <div class="poster">
+                  <figure>
+                    <img src="./imgs/movie2.jpg" srcset="./imgs/movie2@2.jpg 2x" alt="영화 서복">
+                  </figure>
+                  <div class="rank"><strong>2</strong></div>
+                </div> <!-- poster -->
+                <div class="info">
+                  <h3><span>15</span> <strong>서복</strong></h3>
+                  <div class="info_btn">
+                    <a href="#">예매하기</a>
+                    <a href="#">상세보기</a>
+                  </div>
+                </div>
+              </div> <!-- movie2 -->
+              <div class="chart_movie swiper-slide"> <!-- movie3 -->
+                <div class="poster">
+                  <figure>
+                    <img src="./imgs/movie3.jpg" srcset="./imgs/movie3@3.jpg 2x" alt="영화 미나리">
+                  </figure>
+                  <div class="rank"><strong>3</strong></div>
+                </div> <!-- poster -->
+                <div class="info">
+                  <h3><span style="background:#6CC6CB;">12</span> <strong>미나리</strong></h3>
+                  <div class="info_btn">
+                    <a href="#">예매하기</a>
+                    <a href="#">상세보기</a>
+                  </div>
+                </div>
+              </div> <!-- movie3 -->
+              <div class="chart_movie swiper-slide"> <!-- movie4 -->
+                <div class="poster">
+                  <figure>
+                    <img src="./imgs/movie5.jpg" srcset="./imgs/movie5@5.jpg 2x" alt="영화 레 미제라블">
+                  </figure>
+                <div class="rank"><strong>4</strong></div>
+                </div> <!-- poster -->
+                <div class="info">
+                  <h3><span style="background: red;">19</span> <strong>레 미제라블</strong></h3>
+                  <div class="info_btn">
+                    <a href="#">예매하기</a>
+                    <a href="#">상세보기</a>
+                  </div>
+                </div>
+              </div> <!-- movie4 -->
+            </div>  <!-- chart_content1 swiper-wrapper -->
+          </div> <!-- swiper-container2 -->
+
+          <div class="swiper-container2">
+            <div class="chart_content1 swiper-wrapper">
+              <div class="chart_movie swiper-slide"> <!-- movie1 -->
+                <div class="poster">
+                  <figure>
+                    <img src="./imgs/movie4.jpg" srcset="./imgs/movie4@4.jpg 2x" alt="영화 플립">
+                  </figure>
+                  <div class="rank"><strong>1</strong></div>
+                </div> <!-- poster -->
+                
+                <div class="info">
+                  <h3><span>15</span><strong>플립</strong></h3>
+                  <div class="info_btn">
+                    <a href="#">예매하기</a>
+                    <a href="#">상세보기</a>
+                  </div>
+                </div>
+              </div> <!-- movie1 -->
+              <div class="chart_movie swiper-slide"> <!-- movie2 -->
+                <div class="poster">
+                  <figure>
+                    <img src="./imgs/movie6.jpg" srcset="./imgs/movie6@6.png 2x" alt="영화 비밀의 정원">
+                  </figure>
+                  <div class="rank"><strong>2</strong></div>
+                </div> <!-- poster -->
+                <div class="info">
+                  <h3><span>15</span> <strong>비밀의 정원</strong></h3>
+                  <div class="info_btn">
+                    <a href="#">예매하기</a>
+                    <a href="#">상세보기</a>
+                  </div>
+                </div>
+              </div> <!-- movie2 -->
+              <div class="chart_movie swiper-slide"> <!-- movie3 -->
+                <div class="poster">
+                  <figure>
+                    <img src="./imgs/movie7.jpg" srcset="./imgs/movie7@7.jpg 2x" alt="영화 노매드랜드">
+                  </figure>
+                  <div class="rank"><strong>3</strong></div>
+                </div> <!-- poster -->
+                <div class="info">
+                  <h3><span style="background:#6CC6CB;">12</span> <strong>노매드랜드</strong></h3>
+                  <div class="info_btn">
+                    <a href="#">예매하기</a>
+                    <a href="#">상세보기</a>
+                  </div>
+                </div>
+              </div> <!-- movie3 -->
+              <div class="chart_movie swiper-slide"> <!-- movie4 -->
+                <div class="poster">
+                  <figure>
+                    <img src="./imgs/movie8.jpg" srcset="./imgs/movie8@8.jpg 2x" alt="영화 어른들은 몰라요">
+                  </figure>
+                <div class="rank"><strong>4</strong></div>
+                </div> <!-- poster -->
+                <div class="info">
+                  <h3><span>15</span> <strong>어른들은 몰라요</strong></h3>
+                  <div class="info_btn">
+                    <a href="#">예매하기</a>
+                    <a href="#">상세보기</a>
+                  </div>
+                </div>
+              </div> <!-- movie4 -->
+            </div>  <!-- chart_content1 swiper-wrapper -->
+          </div> <!-- swiper-container2 -->
+
+          <div class="swiper-container2">
+            <div class="chart_content1 swiper-wrapper">
+              <div class="chart_movie swiper-slide"> <!-- movie1 -->
+                <div class="poster">
+                  <figure>
+                    <img src="./imgs/movie9.jpg" srcset="./imgs/movie9@9.jpg 2x" alt="영화 비와 당신의 이야기">
+                  </figure>
+                  <div class="rank"><strong>1</strong></div>
+                </div> <!-- poster -->
+                
+                <div class="info">
+                  <h3><span>15</span><strong>비와 당신의 이야기</strong></h3>
+                  <div class="info_btn">
+                    <a href="#">예매하기</a>
+                    <a href="#">상세보기</a>
+                  </div>
+                </div>
+              </div> <!-- movie1 -->
+              <div class="chart_movie swiper-slide"> <!-- movie2 -->
+                <div class="poster">
+                  <figure>
+                    <img src="./imgs/movie10.jpg" srcset="./imgs/movie10@10.jpg 2x" alt="영화 중경삼림">
+                  </figure>
+                  <div class="rank"><strong>2</strong></div>
+                </div> <!-- poster -->
+                <div class="info">
+                  <h3><span>15</span> <strong>중경삼림</strong></h3>
+                  <div class="info_btn">
+                    <a href="#">예매하기</a>
+                    <a href="#">상세보기</a>
+                  </div>
+                </div>
+              </div> <!-- movie2 -->
+              <div class="chart_movie swiper-slide"> <!-- movie3 -->
+                <div class="poster">
+                  <figure>
+                    <img src="./imgs/movie11.jpg" srcset="./imgs/movie11@11.jpg 2x" alt="영화 모탈컴뱃">
+                  </figure>
+                  <div class="rank"><strong>3</strong></div>
+                </div> <!-- poster -->
+                <div class="info">
+                  <h3><span style="background:red;">19</span> <strong>모탈컴뱃</strong></h3>
+                  <div class="info_btn">
+                    <a href="#">예매하기</a>
+                    <a href="#">상세보기</a>
+                  </div>
+                </div>
+              </div> <!-- movie3 -->
+              <div class="chart_movie swiper-slide"> <!-- movie4 -->
+                <div class="poster">
+                  <figure>
+                    <img src="./imgs/movie12.jpg" srcset="./imgs/movie12@12.jpg 2x" alt="영화 자산어보">
+                  </figure>
+                <div class="rank"><strong>4</strong></div>
+                </div> <!-- poster -->
+                <div class="info">
+                  <h3><span>15</span> <strong>자산어보</strong></h3>
+                  <div class="info_btn">
+                    <a href="#">예매하기</a>
+                    <a href="#">상세보기</a>
+                  </div>
+                </div>
+              </div> <!-- movie4 -->
+            </div>  <!-- chart_content1 swiper-wrapper -->
+          </div> <!-- swiper-container2 -->
+
+          <div class="swiper-container2">
+            <div class="chart_content1 swiper-wrapper">
+              <div class="chart_movie swiper-slide"> <!-- movie1 -->
+                <div class="poster">
+                  <figure>
+                    <img src="./imgs/movie13.jpg" srcset="./imgs/movie13@13.jpg 2x" alt="영화 천녀유혼">
+                  </figure>
+                  <div class="rank"><strong>1</strong></div>
+                </div> <!-- poster -->
+                
+                <div class="info">
+                  <h3><span>15</span><strong>천녀유혼</strong></h3>
+                  <div class="info_btn">
+                    <a href="#">예매하기</a>
+                    <a href="#">상세보기</a>
+                  </div>
+                </div>
+              </div> <!-- movie1 -->
+              <div class="chart_movie swiper-slide"> <!-- movie2 -->
+                <div class="poster">
+                  <figure>
+                    <img src="./imgs/movie14.jpg" srcset="./imgs/movie14@14.jpg 2x" alt="영화 더 랍스터">
+                  </figure>
+                  <div class="rank"><strong>2</strong></div>
+                </div> <!-- poster -->
+                <div class="info">
+                  <h3><span style="background: red;">19</span> <strong>더 랍스터</strong></h3>
+                  <div class="info_btn">
+                    <a href="#">예매하기</a>
+                    <a href="#">상세보기</a>
+                  </div>
+                </div>
+              </div> <!-- movie2 -->
+              <div class="chart_movie swiper-slide"> <!-- movie3 -->
+                <div class="poster">
+                  <figure>
+                    <img src="./imgs/movie15.jpg" srcset="./imgs/movie15@15.jpg 2x" alt="영화 미나리">
+                  </figure>
+                  <div class="rank"><strong>3</strong></div>
+                </div> <!-- poster -->
+                <div class="info">
+                  <h3><span style="background:#6CC6CB;">12</span> <strong>미나리</strong></h3>
+                  <div class="info_btn">
+                    <a href="#">예매하기</a>
+                    <a href="#">상세보기</a>
+                  </div>
+                </div>
+              </div> <!-- movie3 -->
+              <div class="chart_movie swiper-slide"> <!-- movie4 -->
+                <div class="poster">
+                  <figure>
+                    <img src="./imgs/movie16.jpg" srcset="./imgs/movie16@16.jpg 2x" alt="영화 최면">
+                  </figure>
+                <div class="rank"><strong>4</strong></div>
+                </div> <!-- poster -->
+                <div class="info">
+                  <h3><span style="background: red;">15</span> <strong>최면</strong></h3>
+                  <div class="info_btn">
+                    <a href="#">예매하기</a>
+                    <a href="#">상세보기</a>
+                  </div>
+                </div>
+              </div> <!-- movie4 -->
+            </div>  <!-- chart_content1 swiper-wrapper -->
+          </div> <!-- swiper-container2 -->
+
+        </div> <!-- movie chart -->
+      </div> <!-- movie -->
+    </div> <!-- row -->
+  </div><!-- container -->
+</section>
 </body>
 </html>
