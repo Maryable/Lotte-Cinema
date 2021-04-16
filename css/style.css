@@ -146,7 +146,7 @@
 
 
 /* 영화 차트 순위 */
-#movie_chart_wrap{}
+
 .movie{padding: 100px 0;}
 
 .movie .movie_title{
@@ -155,9 +155,7 @@
   align-items: center;
   margin: 10px auto;
 }
-/* .chart_content1 {
-  width: 1220px;
-} */
+
 .movie .movie_title > ul {
   display: flex;
   align-items: center;
@@ -178,31 +176,38 @@
   display: block;
   padding: 10px 24px;
   font-size: var(--font-regular);
-}
-
-.movie_chart{ }
-.movie_chart .chart_content1{
-  overflow: hidden;
+  font-weight: var(--weight-semi-bold);
 }
 
 .movie_chart .chart_content1 > div {
   /* 영화 상자 1 */
   float: left;
-  width: 280px;
-  /* height: 500px; */
+  width: 280px !important;
+  height: 500px;
   margin-left: 10px;
-  outline: 1px solid black;
+}
+
+.swiper-wrapper, .swiper-container2 {
+  margin: 0 auto;
+}
+
+.movie_chart {
+  overflow: hidden;
+  /* outline: 1px solid salmon; */
 }
 
 .movie_chart .chart_content1 > div:first-child {
   margin-left: 0;
 }
 
-.chart_movie {}
 .chart_movie figure img{
   display: block;
+  width: 100%;
 }
-.chart_movie .poster {position: relative;}
+.chart_movie .poster {
+  position: relative; 
+}
+
 .chart_movie .poster .rank {
   font-family: 'Raleway';
   position: absolute;
@@ -254,10 +259,37 @@
 }
 
 
+/* 이벤트 영역 */
+article {margin-top: 30px;}
+.event h3 {
+  margin: 8px;
+}
+.event h3 span {
+  margin: 0 12px 0 30px;
+  font-size: var(--font-extrasmall);
+}
 
+.event ul{display: flex; justify-content: space-between;}
+.event ul li {
+  width: 32.6%;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 300ms ease-in;
+}
 
+.event ul li a img {height: 100%;  transition: all 300ms ease-in;}
+.event ul li:hover > a img {
+  transform: scale(1.05);
+}
+.event_banner{}
+.event_banner div {
+  display: inline-block;
+  margin-left: 1%;
+}
 
+.event_banner div:nth-child(1){height: 250px; margin-left: 0;}
+.event_banner div:nth-child(2){height: 250px;}
+.event_banner div:nth-child(3){height: 250px;}
 
-
-
-
+.event > div > a {display: block;}
+.event > div > a >img { display:block; height: 250px;}
