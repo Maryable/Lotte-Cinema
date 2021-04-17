@@ -32,6 +32,33 @@
     font-weight: var(--weight-regular);
   }
 
+  
+  .card ul li{
+    padding: 12px;
+    border: 1px solid rgb(223, 223, 223);
+    min-height: 110px;
+    margin-bottom: 10px;
+    cursor: default;
+  }
+
+  .card ul li a span {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+  }
+  .card ul li a span img {width: 100px; margin-top: 5px;}
+  .card ul li strong {
+    display: block;
+    font-weight: var(--weight-semibold);
+    padding-left: 110px;
+  }
+  .card ul li em {
+    display: block;
+    font-size: var(--font-small);
+    padding-left: 110px;
+  }
+
+
 
 
 }
@@ -69,54 +96,121 @@
   .movie .movie_title{
     width: 100%;
     margin: 10px auto;
+
   }
 
-/* 새로 리뉴열 오픈한 영화관 영역 */
-#new-open {
-  margin: 80px auto;
-}
-.opening {
-  padding: 50px 0;
-  text-align: center;
-  color: #fff;
-}
 
-.opening h2 > span.grand_title{
-  font-size: var(--font-extralarge);
-  font-weight: var(--weight-semi-bold);
-}
+  /* 새로 리뉴열 오픈한 영화관 영역 */
+  #new-open {
+    margin: 80px auto;
+  }
+  .opening {
+    padding: 50px 0;
+    text-align: center;
+    color: #fff;
+  }
 
-.opening strong.grand_date{
-  display: inline-block;
-  padding: 8px 0;
-  font-size: var(--font-large);
-}
+  .opening h2 > span.grand_title{
+    font-size: var(--font-extralarge);
+    font-weight: var(--weight-semi-bold);
+  }
 
-.opening .desc{
-  font-size: var(--font-medium);
-  padding: 10px;
-  margin-bottom: 20px;
-}
+  .opening strong.grand_date{
+    display: inline-block;
+    padding: 8px 0;
+    font-size: var(--font-large);
+  }
 
-.opening > .open_box > div {
-  width: 26%; 
-  padding: 22px 12px;
-}
+  .opening .desc{
+    font-size: var(--font-medium);
+    padding: 10px;
+    margin-bottom: 20px;
+  }
 
-.opening > .open_box > div > h3 {
-  font-size: var(--font-medium);
-  font-weight: var(--weight-regular);
-  margin-top: -40px;
-  padding: 8px;
-  background-color: #fff;
-  border-radius: 10px;
-}
+  .opening > .open_box > div {
+    width: 26%; 
+    padding: 22px 12px;
+  }
 
-.opening > .open_box > div > p {
-  margin-top: 26px;
-  text-align: center;
-  font-size: var(--font-small);
-}
+  .opening > .open_box > div > h3 {
+    font-size: var(--font-medium);
+    font-weight: var(--weight-regular);
+    margin-top: -40px;
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+
+  .opening > .open_box > div > p {
+    margin-top: 26px;
+    text-align: center;
+    font-size: var(--font-small);
+  }
+
+
+  /* 제휴 카드  */
+  .card{padding: 14px;}
+
+  .card ul li{
+    position: relative;
+    padding: 5px;
+    border: 1px solid rgb(223, 223, 223);
+    min-height: 100px;
+    margin-bottom: 5px;
+    cursor: default;
+  }
+
+  .card ul li a span {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+  }
+  .card ul li a span img {width: 100px;}
+  .card ul li strong {
+    display: block;
+    font-weight: var(--weight-semibold);
+    padding-left: 110px;
+  }
+  .card ul li em {
+    display: block;
+    font-size: 10px;
+    padding-left: 110px;
+  }
+  .help > article.help_box3 {margin-top: 18px;}
+  .help > article > div.card{
+    height: 340px;
+  }
+  
+  .help > article > div.notice_box{
+    height: 400px;
+  }
+  .help > article {
+    margin: 60px 0;
+    width: 100%;
+    height: 350px;
+  }
+
+  .help > article > div {
+    width: 100%;
+    border: 1px solid var(--color-dark-white);
+  }
+  .card ul li a span {
+    top: 8px;
+    left: 10px;
+  }
+  .card ul li a span img {width: 120px;}
+  .card ul li strong {
+    display: block;
+    margin-top: 20px;
+    font-weight: var(--weight-semibold);
+    padding-left: 150px;
+  }
+  .card ul li em {
+    display: block;
+    padding-left: 150px;
+  }
+
+
 
 
 }
@@ -181,6 +275,10 @@
   .opening > .open_box > div > p > strong {
     margin-right: 0px;
   }
+
+  .footer_info ul li a {
+    font-size: var(--font-small);
+  }
   
 
 }
@@ -231,7 +329,21 @@
     background-color: #fff;
     border-radius: 10px;
   }
-  
+
+  #footer {
+    background-color: #333;
+    margin-top: 100px;
+  }
+  .footer_info ul li a {
+    font-size: 12px;
+  }
+
+  .footer_info ul li{
+    display: inline; 
+  }
+
+  .footer_info address{font-size: 12px;}
+
 
 }
 
@@ -286,6 +398,24 @@
       margin-right: 0;
     }
     
+    #footer {
+      background-color: #333;
+      margin-top: 100px;
+    }
+    .footer_sns ul li {
+      margin-left: 10px;
+      padding: 10px 0;
+    }
+    .footer_info ul {
+      display: block;
+      text-align: center;
+    }
+
+    .footer_sns ul li a span{font-size: 10px;}
+    .footer_info ul li a {font-size: 10px; padding: 5px;}
+    .footer_info ul li {margin:10px;}
+    .footer_info address{font-size: 10px; margin-top: 10px;}
+    .footer_info h2 img{ width: 120px;}
   
 
 }

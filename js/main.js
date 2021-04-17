@@ -55,6 +55,19 @@ $(function(){
     }
   });
 
+  //공지사항 탭메뉴 
+  let tab = $('.notice_box');
+  tab.find('ul>li>ul').hide();
+  tab.find('ul>li.active >ul').show();
 
+  function tabList(e) {
+    e.preventDefault();
+    let target = $(this);
+    target.next().show().parent('li')
+      .addClass('active').siblings('li')
+      .removeClass('active').find('ul').hide();
+  }
 
+  tab.find('ul>li>a').click(tabList);
 });
+
