@@ -2,13 +2,12 @@
   .container {width: 100%;}
   .header .nav ul li {width: 93px;}
   .header .nav ul li a {font-size: 15px; padding: 17px 10px}
-  .header h1 em {padding: 11px 8px 5px 0;}
+  .header h1 em {padding: 15px 8px 5px 0;}
   .header h1 strong {top: 19px;}
   .swiper-button-prev, 
   .swiper-button-next {
-    font-size: 22px;
+    font-size: 28px;
   }
-
 
   .movie .movie_title{
     width:100%;
@@ -33,6 +32,8 @@
     font-weight: var(--weight-regular);
   }
 
+
+
 }
 
 @media (max-width: 1024px){
@@ -43,6 +44,7 @@
     float: none; 
     text-align: center;
   }
+  .header h1 em {padding: 12px 8px 5px 0;}
   .header h1 strong {left: 24px;}
   .banner_menu .banner_left ul {display: none;}
   .banner_menu .banner_right ul:first-child {display: none;}
@@ -69,6 +71,54 @@
     margin: 10px auto;
   }
 
+/* 새로 리뉴열 오픈한 영화관 영역 */
+#new-open {
+  margin: 80px auto;
+}
+.opening {
+  padding: 50px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.opening h2 > span.grand_title{
+  font-size: var(--font-extralarge);
+  font-weight: var(--weight-semi-bold);
+}
+
+.opening strong.grand_date{
+  display: inline-block;
+  padding: 8px 0;
+  font-size: var(--font-large);
+}
+
+.opening .desc{
+  font-size: var(--font-medium);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.opening > .open_box > div {
+  width: 26%; 
+  padding: 22px 12px;
+}
+
+.opening > .open_box > div > h3 {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-regular);
+  margin-top: -40px;
+  padding: 8px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.opening > .open_box > div > p {
+  margin-top: 26px;
+  text-align: center;
+  font-size: var(--font-small);
+}
+
+
 }
 
 
@@ -79,7 +129,7 @@
     padding: 0;
     height: 100%;
   }
-
+  .header h1 em {padding: 12px 8px 5px 0;}
   .movie{padding: 50px 0;}
   .movie .movie_title > ul > li > a {
     padding: 8px 10px;
@@ -118,7 +168,20 @@
     font-size: var(--font-small);
   }
 
+  .opening > .open_box > div > p {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
 
+  .opening > .open_box > div > p > em {
+    margin-right: 0px;
+  }
+  
+  .opening > .open_box > div > p > strong {
+    margin-right: 0px;
+  }
+  
 
 }
 
@@ -127,21 +190,103 @@
   .row {padding: 0 16px;}
   #nav {right: 6px;}
   .header h1 {text-align: left;}
-  .header h1 strong {display: none;}
 
   .hamburger {
     padding: 0px;
   }
 
-
-
-
+  /* 새로 리뉴열 오픈한 영화관 영역 */
+  #new-open {
+    margin: 40px auto;
+  }
+  .opening {
+    padding: 40px 0;
+  }
+  
+  .opening h2 > span.grand_title{
+    font-size: var(--font-large);
+  }
+  
+  .opening strong.grand_date{
+    padding: 8px 0;
+    font-size: var(--font-medium);
+  }
+  
+  .opening .desc{
+    font-size: var(--font-medium);
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .opening > .open_box > div {
+    width: 26%; 
+    padding: 12px 12px;
+  }
+  
+  .opening > .open_box > div > h3 {
+    font-size: var(--font-regular);
+    font-weight: var(--weight-regular);
+    margin-top: -30px;
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  
 
 }
+
+
+
 
 @media (max-width: 600px){
   .slider {height: 400px;}
   .banner_menu {top: 16px;}
+
+    /* 새로 리뉴열 오픈한 영화관 영역 */
+    #new-open {
+      margin: 40px auto;
+    }
+    .opening {
+      padding: 24px 0;
+    }
+    
+    .opening h2 > span.grand_title{
+      font-size: var(--font-large);
+    }
+    
+    .opening strong.grand_date{
+      padding: 8px 0;
+      font-size: var(--font-regular);
+    }
+    
+    .opening .desc{
+      font-size: var(--font-regular);
+      padding: 8px;
+      margin-bottom: 22px;
+    }
+    
+    .opening > .open_box > div {
+      width: 26%; 
+      padding: 8px 12px;
+    }
+    
+    .opening > .open_box > div > h3 {
+      font-size: var(--font-micro);
+      font-weight: var(--weight-regular);
+      margin-top: -20px;
+      padding: 8px;
+      background-color: #fff;
+      border-radius: 10px;
+    }
+
+    .opening > .open_box > div > p {
+      font-size: 10px;
+      margin-top: 10px;
+      text-align: center;
+      margin-right: 0;
+    }
+    
+  
 
 }
 

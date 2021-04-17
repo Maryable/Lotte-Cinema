@@ -32,7 +32,7 @@
 }
 .header h1 {float: left;}
 .header h1 em {
-  padding: 15px 8px 5px 0; 
+  padding: 20px 8px 5px 0; 
   display: inline-block;
 }
 .header h1 em img {width: 155px;}
@@ -236,9 +236,12 @@
   display: inline-block;
   width: 26px;
   height: 26px;
+  padding: 5px;
   text-align: center;
   border-radius: 50%;
   color: #fff;
+  line-height: 14px;
+  font-size: var(--font-small);
   background: #F99E71;
   margin-right: 8px;
 }
@@ -261,6 +264,7 @@
 
 /* 이벤트 영역 */
 article {margin-top: 30px;}
+.event {margin-top: 30px;}
 .event h3 {
   margin: 8px;
 }
@@ -281,15 +285,115 @@ article {margin-top: 30px;}
 .event ul li:hover > a img {
   transform: scale(1.05);
 }
-.event_banner{}
+
 .event_banner div {
-  display: inline-block;
+  float: left;
   margin-left: 1%;
 }
 
-.event_banner div:nth-child(1){height: 250px; margin-left: 0;}
-.event_banner div:nth-child(2){height: 250px;}
-.event_banner div:nth-child(3){height: 250px;}
+.event_banner > div > img {
+  width: 100%;
+  height: 100%;
+}
+
+.event_banner div:nth-child(1){
+  width: 62%; 
+  margin-left: 0;
+}
+.event_banner div:nth-child(2){
+  width: 35%;
+}
+.event_banner div:nth-child(3){
+  width: 35%;
+}
 
 .event > div > a {display: block;}
 .event > div > a >img { display:block; height: 250px;}
+
+
+/* 새로 리뉴열 오픈한 영화관 영역 */
+#new-open {
+  margin: 100px auto;
+  background: url("../imgs/grand_open.jpg")center/cover no-repeat fixed;
+  cursor: default;
+}
+.opening {
+  width: 100%;
+  padding: 100px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.opening > h2{
+  width: 100%;
+  /* margin: 0 auto 20px auto; */
+}
+
+.opening h2 > span.grand_title{
+  font-size: var(--font-title);
+  font-weight: var(--weight-semi-bold);
+  color:#fff;
+}
+
+.opening strong.grand_date{
+  display: inline-block;
+  width: 100%;
+  padding: 10px 0;
+  font-size: var(--font-large);
+  color: #ffd3bd;
+}
+
+.opening .desc{
+  font-size: var(--font-medium);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.opening > .open_box > div {
+  float: left;
+  width: 26%; 
+  margin: 1% 3% 0 3%;
+  padding: 30px 20px;
+  border: 1px solid var(--color-dark-white);
+  background: rgba(255,255,255,0.3);
+  border-radius: 5px;
+}
+
+.opening > .open_box > div > h3 {
+  font-size: var(--font-large);
+  font-weight: var(--weight-regular);
+  margin-top: -40px;
+  padding: 10px;
+  border: 1px solid var(--color-dark-white);
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.opening > .open_box > div > p {
+  margin-top: 26px;
+  text-align: center;
+  font-size: var(--font-regular);
+}
+
+.opening > .open_box > div > p > em {
+  margin-right: 10px;
+  color: #Fff;
+}
+
+.opening > .open_box > div > p > strong {
+  margin-right: 10px;
+  color: #Fff;
+}
+
+.opening > .open_box > div:last-child > p {
+  color: #ff9486;
+}
+
+/* 공지사항  */
+#help {}
+.help {}
+.help .help_box1 {}
+
+
+.help .help_box2 {}
+.help .help_box3 {}
