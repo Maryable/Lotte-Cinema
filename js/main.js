@@ -68,6 +68,7 @@ $(function(){
       .removeClass('active').find('ul').hide();
   }
 
-  tab.find('ul>li>a').click(tabList);
+  tab.find('ul>li>a').click(tabList).focus(tabList);
+  // tab을 했을 때 자동으로 tablist에 focus되도록 함.
 });
 

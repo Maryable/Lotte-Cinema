@@ -26,24 +26,33 @@
   <meta property="og:description" content="롯데시네마 홈페이지를 반응형으로 비슷하게 구현해 본 사이드 프로젝트 입니다." />
   <!-- og tags -->
 
-  <!-- HTLM5shiv ie6~8 -->
-    <!--[if lt IE 9]> 
-      <script src="assets/js/html5shiv.min.js"></script>
-      <script type="text/javascript">
-      alert("현재 브라우저는 지원하지 않습니다. 크롬 브라우저를 추천합니다.!");
-      </script>
-   <![endif]-->
-   <!-- HTML5shiv : 구버전IE에서 지원하지 않는 article, aside, details, figcaption, figure, footer, summary등의 
-    시멘틱 태그를 인식할 수 있도록 호환성을 맞추는 스크립트 라이브러리 -->
+<!-- HTLM5shiv ie6~8 -->
+  <!--[if lt IE 9]> 
+    <script src="assets/js/html5shiv.min.js"></script>
+    <script type="text/javascript">
+    alert("현재 브라우저는 지원하지 않습니다. 크롬 브라우저를 추천합니다.!");
+    </script>
+  <![endif]-->
+  <!-- HTML5shiv : 구버전IE에서 지원하지 않는 article, aside, details, figcaption, figure, footer, summary등의 
+  시멘틱 태그를 인식할 수 있도록 호환성을 맞추는 스크립트 라이브러리 -->
 
-    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script defer src="./js/ie-checker.js"></script>
-    <script defer src="./js/modernizr-custom.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
-    <script defer src="js/main.js" ></script>
-    <!-- javascript -->
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./js/ie-checker.js"></script>
+  <script defer src="./js/modernizr-custom.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+  <script defer src="js/main.js" ></script>
+  <!-- javascript -->
 </head>
 <body>
+  <!-- 스킵메뉴 -->
+  <div id="skip">
+    <a rel="bookmark" href="#movie_chart_wrap">최신 영화 소식</a>
+    <a rel="bookmark" href="#event_banner">이벤트 및 무대인사 소식</a>
+    <a rel="bookmark" href="#new-open">지역별 새 소식</a>
+    <a rel="bookmark" href="#help">공지사항 및 고객센터</a>
+  </div>
+  <!-- 스킵메뉴 -->
+
 <header id="header">
   <div class="container">
     <div class="row">
