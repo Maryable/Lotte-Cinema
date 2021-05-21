@@ -209,7 +209,6 @@
 
 .movie_chart {
   overflow: hidden;
-  /* outline: 1px solid salmon; */
 }
 
 .movie_chart .chart_content1 > div:first-child {
@@ -220,6 +219,7 @@
   display: block;
   width: 100%;
 }
+
 .chart_movie .poster {
   position: relative; 
 }

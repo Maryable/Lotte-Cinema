@@ -88,7 +88,7 @@
 
   .movie .movie_title ul li a {
     padding: 8px 16px;
-    font-size: var(--font-extrasmall);
+    font-size: var(--font-regular);
   }
 
   .movie{padding: 80px 0;}
@@ -235,13 +235,6 @@
     font-size: var(--font-micro);
   }
 
-  .event ul li {
-    width: 50%;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: all 300ms ease-in;
-  }
-
   .event ul{
     width: 100%;
     justify-content: space-between;
@@ -250,12 +243,19 @@
 
   .event ul li {
     width: 49.6%;
+    min-height: 200px;
     border-radius: 5px;
     overflow: hidden;
     transition: all 300ms ease-in;
   }
+
   .event ul li:last-child{
     display: none;
+  }
+
+  .event ul li a img {
+    background-position: center; 
+    background-size: cover;
   }
 
   .event h3, .event h3 span a{
@@ -353,6 +353,15 @@
 @media (max-width: 600px){
   .slider {height: 400px;}
   .banner_menu {top: 16px;}
+
+  .event ul {
+    flex-direction: column;
+  }
+  .event ul li {
+    width: 100%;
+    height: 220px;
+    margin-top: 10px;
+  }
 
     /* 새로 리뉴열 오픈한 영화관 영역 */
     #new-open {
